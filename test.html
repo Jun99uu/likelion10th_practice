@@ -1,46 +1,171 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset='utf-8'>
+  <head>
+    <meta charset="utf-8" />
     <title>HTML의 시작</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!--제목 태그 예시 3분-->
-
-    
+    <h1>제목의 중요도</h1>
+    <h2>제목의 중요도</h2>
+    <h3>제목의 중요도</h3>
+    <h4>제목의 중요도</h4>
+    <h5>제목의 중요도</h5>
+    <h6>제목의 중요도</h6>
+    <hr />
 
     <!--본문 태그 예시 3분-->
-
-   
+    <p>우ㅏ오아아아아아아앙러알어ㅏㄹ어ㅏㅏㄹ울알ㅇ렁ㄹㅇ</p>
+    <p>아에이오우앙ㅇ이오이웅<br />야ㅏㄹ엘어링랑루아라ㅗㅇㄹ</p>
+    <pre>ㅎ안녕하ㅏ에숑아ㅏㅓㅇ사ㅔㅇ냥난ㅇㅇㄴ</pre>
+    <hr />
 
     <!--본문 태그 예시2 3분-->
-
-    
+    <strong>텍스트를 굵게표현</strong>
+    <br />
+    <br />
+    <em>텍스트를 기울여서 표현</em>
+    <br />
+    <br />
+    텍스트를<sub>내려서 표현</sub>
+    <br />
+    <br />
+    텍스트를<sup>올려서 표현</sup>
+    <br />
+    <br />
+    <ins>텍스트에 밑줄을 삽입</ins>
+    <br />
+    <br />
+    <del>텍스트에 취소선 삽입</del>
+    <hr />
 
     <!--링크 태그 예시 3분-->
-
-   
+    <a href="#section1">이동하려면 클릭하세요</a>
+    <br />
+    <a>Naver</a>
+    <br />
+    <a href="https://www.naver.com/">네이버</a>
+    <br />
+    <a href="https://www.naver.com/" title="네이버로 이동하는 링크">네이버</a>
+    <br />
+    <a href="https://www.naver.com/" target="_blank">네이버 새탭</a>
+    <br />
+    <a href="https://www.naver.com/" target="_self">네이버 현재탭</a>
+    <br />
+    <h1>공백</h1>
+    <h2>공백</h2>
+    <p id="section1">이동완료</p>
+    <hr />
 
     <!--이미지 태그 예시 3분-->
-
-   
+    <img
+      src="https://cdn.discordapp.com/attachments/955387965247467520/960839271290388490/KakaoTalk_20220307_143904001.jpg"
+      alt="그뭐냐 멋사로고"
+      style="width: 30%; height: 30%"
+    />
+    <hr />
 
     <!--테이블 태그 예시 3분-->
-
-    
+    <table>
+      <tr>
+        <th>학과</th>
+        <th>이름</th>
+        <th>파트</th>
+      </tr>
+      <tr>
+        <td>소프트웨어학부</td>
+        <td>김멋쟁</td>
+        <td>디자인</td>
+      </tr>
+      <tr>
+        <td>컴퓨터학부</td>
+        <td>최사자</td>
+        <td>프론트</td>
+      </tr>
+    </table>
+    <hr />
 
     <!--리스트 태그 예시 5분-->
-
-    
+    <h1>간지나게 숨쉬기</h1>
+    <ol>
+      <li>일단 일어난다</li>
+      <li>믓찌게 하품한다</li>
+      <li>Ganzi나게 유튜브 튼다</li>
+    </ol>
+    <h1>작살나게 밥먹기</h1>
+    <ul>
+      <li>느즈막하게 일어나기</li>
+      <li>냉장고 뒤지기</li>
+      <li>고기만 꺼내먹기</li>
+    </ul>
+    <h1>끝내주게 잠자기</h1>
+    <ol type="a" start="3" reversed>
+      <li>드르렁쿨쿨</li>
+      <li>ciki체고</li>
+      <li>아쓸거없음</li>
+    </ol>
 
     <!--method 속성 예시 5분-->
+    <h2>method-GET</h2>
+    <form action="전송할 대상" method="GET">
+      <label>ID</label>
+      <input type="text" name="id" />
+    </form>
 
-    
-
+    <h2>method-POST</h2>
+    <form action="전송할 대상" method="POST">
+      <label>ID</label>
+      <input type="text" name="id" />
+    </form>
+    <hr />
     <!--Form 태그 예시 Input-5분 select-4분 나머지-6분-->
-    
-    
-</body>
+    <form action="URL" method="POST">
+      <label for="id">ID : </label>
+      <input type="text" name="id" placeholder="아이디입력하셈" />
+      <br />
+      <label for="pw">PW : </label>
+      <input type="password" name="pw" placeholder="비번쓰셈" />
+      <br />
+
+      <label for="email adrs">email : </label>
+      <input type="text" name="text" placeholder="이메일쓰셈" />
+      <select name="email" id="adrs">
+        <optgroup label="이메일선택">
+          <option value="naver">@naver.com</option>
+          <option value="google">@google.com</option>
+          <option value="daum">@daum.net</option>
+        </optgroup>
+      </select>
+      <br />
+
+      <div>
+        <h3>다룰 수 있는 언어는 무엇이 있나요?</h3>
+        <input type="checkbox" /><label>Java</label>
+        <input type="checkbox" /><label>Python</label>
+        <input type="checkbox" /><label>C</label>
+        <input type="checkbox" /><label>HTML&CSS</label>
+        <label for="js"><input type="checkbox" id="js" />JavaScript</label>
+      </div>
+
+      <div>
+        <h3>며캉년~?</h3>
+        <input type="radio" name="grade" /><label>1학년샌애긔</label>
+        <input type="radio" name="grade" /><label>2학년</label>
+        <input type="radio" name="grade" /><label>3학년화석</label>
+        <input type="radio" name="grade" /><label>4학년틀딱</label>
+      </div>
+
+      <div>
+        <textarea
+          name="note"
+          id="notebook"
+          cols="30"
+          rows="20"
+          placeholder="글쓰셈"
+        ></textarea>
+        <button type="submit">제출</button>
+      </div>
+    </form>
+  </body>
 </html>
