@@ -52,6 +52,9 @@
   height: 4px;
   display: block;
   background: #39106a;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
 }
 
 .ham span:after {
@@ -196,7 +199,7 @@
   width: 80px;
   background-color: #fff;
   color: #3a0e6a;
-  padding: 7px 30px 9px 3px;
+  padding: 7px 30px 9px 30px;
   display: inline-block;
   border: 1px solid #fff;
 }
@@ -233,8 +236,6 @@
 .slider .ss1 {
   background: url(../img/swiper01.jpg) no-repeat center center;
   background-size: cover;
-  position: absolute;
-  bottom: 100px;
 }
 
 .slider .swiper-slide h2 {
